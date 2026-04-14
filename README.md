@@ -1,2 +1,2 @@
-# OmkarThawakar.github.io
+#Kundan.github.io
 My Personal Website
