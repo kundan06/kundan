@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Kundan Mishra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .projects-intro {
+      max-width: 860px;
+      margin-bottom: 2rem;
+      color: #444;
+      font-size: 1.05rem;
+    }
+
+    .project-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border-color);
+      background: linear-gradient(135deg, #eaf2ff, #f8fbff);
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 1rem;
+    }
+
+    .project-tag {
+      display: inline-block;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: var(--primary-color);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .project-points {
+      padding-left: 1.2rem;
+      margin: 0.75rem 0 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .project-points li {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    .project-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="ai-background"></canvas>
+
+  <header class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">Kundan Mishra</a>
+      <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="Kundan-Mishra_CV.pdf" target="_blank">CV</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="animate-fade-in">
+      <h1 class="section-title">Selected Projects</h1>
+
+      <div class="projects-intro">
+        <p>
+          My projects focus on electrochemical biosensors, multiplexed impedance sensing, nano-enabled assay design,
+          and translational sensing platforms for food safety, water quality, and clinical diagnostics. This page
+          highlights representative systems spanning sensor fabrication, portable device development, microfluidics,
+          and biomarker detection. Each project summary is based on my resume and research portfolio.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- If your actual filenames differ, update the src paths below to match files in images/Project-image/ -->
+
+        <article class="card project-card">
+          <img src="images/Project-image/sensor-platform.jpg" alt="Multiplexed food safety sensor platform"
+            class="project-image" onerror="this.src='images/department.jpg'">
+          <div class="card-body">
+            <h3 class="card-title">Intelligent Multiplexed EIS Biosensor for Food Safety</h3>
+            <p class="card-text">
+              Developed a multiplexed electrochemical impedance spectroscopy platform for simultaneous detection of
+              antibiotics and pesticides in complex food matrices.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">EIS</span>
+              <span class="project-tag">Multiplexed Sensing</span>
+              <span class="project-tag">Food Safety</span>
+              <span class="project-tag">Screen-Printed Sensors</span>
+            </div>
+            <ul class="project-points">
+              <li>Designed and fabricated sensors using screen-printing methods and full electrochemical workflows.</li>
+              <li>Validated performance in chicken, shrimp, milk, salad, and agricultural soil run-off matrices.</li>
+              <li>Performed spike-and-recovery, reproducibility, and matrix-effect testing for real-world translation.</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="project-meta">
+              <span><i class="fas fa-university"></i> UT Dallas</span>
+              <span><i class="fas fa-flask"></i> Bioengineering</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="images/Project-image/testing-setup.jpg" alt="Portable electrochemical sensing device"
+            class="project-image" onerror="this.src='images/IPM.jpg'">
+          <div class="card-body">
+            <h3 class="card-title">Portable Electrochemical Sensing Platform</h3>
+            <p class="card-text">
+              Worked on portable electroanalytical hardware and impedance-based biosensing systems for rapid,
+              field-deployable detection.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Portable Device</span>
+              <span class="project-tag">Electroanalytical Platform</span>
+              <span class="project-tag">Point-of-Care</span>
+            </div>
+            <ul class="project-points">
+              <li>Supported compact sensing workflows for rapid screening outside conventional laboratory settings.</li>
+              <li>Integrated assay chemistry with hardware for impedance spectroscopy-based biosensor readout.</li>
+              <li>Contributed to translational platforms aligned with water and food monitoring applications.</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="project-meta">
+              <span><i class="fas fa-microchip"></i> Device + Assay Integration</span>
+              <span><i class="fas fa-bolt"></i> Rapid Screening</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="images/Project-image/pathogen-detection.jpg" alt="Pathogen detection sensor testing"
+            class="project-image" onerror="this.src='images/interest.jpg'">
+          <div class="card-body">
+            <h3 class="card-title">Rapid Pathogen Detection in Water Samples</h3>
+            <p class="card-text">
+              Developed electrochemical biosensing strategies for rapid detection of foodborne and waterborne pathogens,
+              including E. coli O157:H7 and Salmonella-related applications.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Water Safety</span>
+              <span class="project-tag">Pathogen Detection</span>
+              <span class="project-tag">Label-Free Sensing</span>
+            </div>
+            <ul class="project-points">
+              <li>Built assay pipelines for sensitive pathogen detection using non-faradaic impedance approaches.</li>
+              <li>Targeted rapid screening workflows suitable for environmental and food-linked water samples.</li>
+              <li>Connected sensor response to real-sample validation and portability goals.</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="project-meta">
+              <span><i class="fas fa-tint"></i> Water Samples</span>
+              <span><i class="fas fa-bacteria"></i> Biosensing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="images/Project-image/mycotoxin-platform.jpg" alt="Mycotoxin and aflatoxin sensing platform"
+            class="project-image" onerror="this.src='images/diabetic.png'">
+          <div class="card-body">
+            <h3 class="card-title">Aflatoxin and Mycotoxin Detection in Food Matrices</h3>
+            <p class="card-text">
+              Designed electrochemical platforms for food contaminant detection with emphasis on aflatoxin B1 and
+              two-plex mycotoxin analysis in practical sample matrices.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Aflatoxin B1</span>
+              <span class="project-tag">Mycotoxins</span>
+              <span class="project-tag">Portable Testing</span>
+            </div>
+            <ul class="project-points">
+              <li>Focused on sensitive, application-ready biosensing in food safety settings.</li>
+              <li>Worked on multiplexed assay strategies to improve throughput and contaminant coverage.</li>
+              <li>Contributed to practical validation in relevant food matrices for translational use.</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="project-meta">
+              <span><i class="fas fa-seedling"></i> Food Contaminants</span>
+              <span><i class="fas fa-vial"></i> Assay Development</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="images/Project-image/microfluidic-chip.PNG" alt="Microfluidic nanobiosensor chip"
+            class="project-image" onerror="this.src='images/lab_website.png'">
+          <div class="card-body">
+            <h3 class="card-title">Microfluidic Lab-on-a-Chip Nanobiosensors</h3>
+            <p class="card-text">
+              At IIT Delhi, contributed to microfluidic lab-on-a-chip nanobiosensors for detection of emerging viral
+              pathogens as part of advanced nanoelectronics and nanofabrication research.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Microfluidics</span>
+              <span class="project-tag">Nano-Biosensors</span>
+              <span class="project-tag">Viral Detection</span>
+            </div>
+            <ul class="project-points">
+              <li>Worked on non-silicon-based nanofabrication technologies and device-level biosensing concepts.</li>
+              <li>Integrated microfluidic handling with nanoscale sensor architecture for pathogen diagnostics.</li>
+              <li>Contributed to lab-on-chip development under the NNetRA research program.</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="project-meta">
+              <span><i class="fas fa-university"></i> IIT Delhi</span>
+              <span><i class="fas fa-dna"></i> Emerging Viral Pathogens</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="images/Project-image/nanomaterial-sensing.PNG" alt="Nanomaterial biosensor development"
+            class="project-image" onerror="this.src='images/Network.png'">
+          <div class="card-body">
+            <h3 class="card-title">Nanomaterial Functionalization and Breath Biomarker Sensing</h3>
+            <p class="card-text">
+              Worked on nanomaterial-enabled sensing systems for biomarker analysis, including molecular diabetic
+              biomarkers in breath and MoS2-based electrochemical diagnostic concepts.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">MWCNT</span>
+              <span class="project-tag">MoS2</span>
+              <span class="project-tag">Breath Diagnostics</span>
+              <span class="project-tag">3D Prototyping</span>
+            </div>
+            <ul class="project-points">
+              <li>Functionalized MWCNTs with COOH, OH, and NH3 groups for biosensing applications.</li>
+              <li>Designed gas-sensing circuitry, calibration setups, and in-vivo-mimicking test environments.</li>
+              <li>Modeled and prototyped sensing hardware using 3D printing and experimental validation workflows.</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="project-meta">
+              <span><i class="fas fa-lungs"></i> Breath Biomarkers</span>
+              <span><i class="fas fa-cubes"></i> Nanomaterials</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kundan Mishra.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://lawa-chatbot-widget.netlify.app/chatbot-widget.js"
+    data-api-key="cb_X2hI9110PWPpMKoHxnpzUPxY5k7KM7z2C6E-RuNYipc" data-api-base="wss://chat.lawa.app"
+    data-api-url="https://chat.lawa.app" data-chatbot-name="AI Assistant" data-theme="light"
+    data-position="bottom-right" data-primary-color="#2563eb" data-text-color="#ffffff"
+    data-greeting="Hello! How can I help you today?" data-placeholder="Type your message..."
+    data-chatbot-tone="professional" data-response-length="balanced" data-language="en"
+    data-enable-typing-indicator="true" data-enable-sound-notifications="false" data-max-retries="3"
+    data-reconnect-delay="2000" async>
+    </script>
+</body>
+
+</html>

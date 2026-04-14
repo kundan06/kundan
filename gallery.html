@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kundan Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-category {
+            margin-bottom: 3rem;
+        }
+
+        .gallery-category h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-category p {
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            line-height: 1.7;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-card {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 0.8rem 1rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="ai-background"></canvas>
+
+    <header class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">Kundan Mishra</a>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link" href="publications.html">Publications</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="Kundan-Mishra_CV.pdf" target="_blank">CV</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="animate-fade-in">
+            <h1 class="section-title">Gallery</h1>
+            <p style="font-size: 1.08rem; color: var(--text-muted); margin-bottom: 3rem; line-height: 1.8;">
+                A collection of moments from conferences, poster presentations, research showcases, and product demo
+                events connected to my work in bioengineering, biosensors, translational diagnostics, and sensing
+                platforms.
+            </p>
+
+            <div class="gallery-category">
+                <h2>BMES 2024</h2>
+                <p>
+                    Highlights from BMES 2024, including conference participation, poster presentation activities, and
+                    interactions with the broader biomedical engineering research community.
+                </p>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="images/gallery/BMES-2024/bmes20241.jpg" loading="lazy" alt="BMES 2024 photo 1">
+                        <div class="gallery-caption">BMES 2024 — conference and presentation moment.</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/BMES-2024/bmes20242.jpg" loading="lazy" alt="BMES 2024 photo 2">
+                        <div class="gallery-caption">BMES 2024 — BMES 2024.</div>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-category">
+                <h2>BMES 2025</h2>
+                <p>
+                    Selected moments from BMES 2025 featuring continued research dissemination, engagement with the
+                    biomedical engineering community, and presentation of ongoing biosensor and diagnostic platform work.
+                </p>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="images/gallery/BMES-2025/bmes20251.jpg" loading="lazy" alt="BMES 2025 photo 1">
+                        <div class="gallery-caption">BMES 2025 — conference participation.</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/BMES-2025/bmes20252.jpg" loading="lazy" alt="BMES 2025 photo 2">
+                        <div class="gallery-caption">BMES 2025 — BMES 2025.</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/BMES-2025/bmes20253.jpg" loading="lazy" alt="BMES 2025 photo 3">
+                        <div class="gallery-caption">BMES 2025 — BMES 2025.</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="gallery-category">
+                <h2>UTD Poster</h2>
+                <p>
+                    Poster presentation moments at UT Dallas, reflecting my work on electrochemical biosensors,
+                    multiplexed EIS sensing, food safety diagnostics, and translational bioengineering research.
+                </p>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="images/gallery/UTD-Poster/utd1.jpg" loading="lazy" alt="UT Dallas poster photo 1">
+                        <div class="gallery-caption">UT Dallas poster presentation.</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/UTD-Poster/utd2.jpg" loading="lazy" alt="UT Dallas poster photo 2">
+                        <div class="gallery-caption">UT Dallas.</div>
+                  
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-category">
+                <h2>Austin SXSW Product Demo</h2>
+                <p>
+                    Product demonstration and showcase moments from Austin SXSW, featuring presentation of sensing or
+                    translational platform work in a public-facing innovation and product demonstration setting.
+                </p>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="images/gallery/SXSW-Demo/sxsw1.jpg" loading="lazy" alt="Austin SXSW demo photo 1">
+                        <div class="gallery-caption">Austin SXSW — product demonstration moment.</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/SXSW-Demo/sxsw2.jpg" loading="lazy" alt="Austin SXSW demo photo 2">
+                        <div class="gallery-caption">Austin SXSW — Austin.</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/SXSW-Demo/sxsw3.jpg" loading="lazy" alt="Austin SXSW demo photo 3">
+                        <div class="gallery-caption">Austin SXSW — Other live product Coffee .</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/gallery/SXSW-Demo/sxsw4.jpg" loading="lazy" alt="Austin SXSW demo photo 4">
+                        <div class="gallery-caption">Austin SXSW — University of Austin.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kundan Mishra.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- Lawa AI Chatbot -->
+    <script src="https://lawa-chatbot-widget.netlify.app/chatbot-widget.js"
+        data-api-key="cb_X2hI9110PWPpMKoHxnpzUPxY5k7KM7z2C6E-RuNYipc" data-api-base="wss://chat.lawa.app"
+        data-api-url="https://chat.lawa.app" data-chatbot-name="AI Assistant" data-theme="light"
+        data-position="bottom-right" data-primary-color="#2563eb" data-text-color="#ffffff"
+        data-greeting="Hello! How can I help you today?" data-placeholder="Type your message..."
+        data-chatbot-tone="professional" data-response-length="balanced" data-language="en"
+        data-enable-typing-indicator="true" data-enable-sound-notifications="false" data-max-retries="3"
+        data-reconnect-delay="2000" async>
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - Kundan Mishra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .pub-category {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .pub-item {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 3px solid transparent;
+      transition: border-left-color 0.2s;
+    }
+
+    .pub-item:hover {
+      border-left-color: var(--primary-color);
+    }
+
+    .pub-title {
+      font-weight: 600;
+      color: var(--text-color);
+      font-size: 1.08rem;
+      line-height: 1.5;
+    }
+
+    .pub-authors {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+      line-height: 1.5;
+    }
+
+    .pub-venue {
+      font-style: italic;
+      color: #0056b3;
+      margin-top: 0.25rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .pub-links {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-left: 0.75rem;
+      font-style: normal;
+      vertical-align: middle;
+    }
+
+    .pub-link-btn {
+      font-size: 0.75rem;
+      color: #4b5563;
+      text-decoration: none;
+      border: 1px solid #d1d5db;
+      background-color: #f9fafb;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+      font-weight: 500;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .pub-link-btn:hover {
+      background-color: #e5e7eb;
+      color: #111827;
+      text-decoration: none;
+      border-color: #9ca3af;
+    }
+
+    .pub-link-doi {
+      color: #0056b3;
+      border-color: #b7d1f5;
+      background-color: #eff6ff;
+    }
+
+    .pub-link-doi:hover {
+      background-color: #0056b3;
+      color: #ffffff;
+      border-color: #0056b3;
+    }
+
+    .pub-link-scholar {
+      color: #6b21a8;
+      border-color: #dcc7f3;
+      background-color: #faf5ff;
+    }
+
+    .pub-link-scholar:hover {
+      background-color: #6b21a8;
+      color: #ffffff;
+      border-color: #6b21a8;
+    }
+
+    .pub-note {
+      margin-top: 0.35rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="ai-background"></canvas>
+
+  <header class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">Kundan Mishra</a>
+      <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link active" href="publications.html">Publications</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="Kundan-Mishra_CV.pdf" target="_blank">CV</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="animate-fade-in">
+      <h1 class="section-title">Publications & Book Chapters</h1>
+
+      <div style="font-size: 1.05rem; color: #444; margin-bottom: 1.5rem;">
+        <p>
+          My work focuses on electrochemical biosensors, impedance spectroscopy, portable sensing systems,
+          food safety, water quality monitoring, and translational bioengineering.
+        </p>
+      </div>
+
+      <h2 class="pub-category">Peer-Reviewed Journal Articles</h2>
+
+      <div class="pub-item">
+        <div class="pub-title">Portable Electrochemical Sensing Platform for Aflatoxin B1 Detection in Food Matrices</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Krupa M. Thakkar, Vikram Narayanan Dhamu, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Food Analytical Methods, 19, Article 19 (2026)
+          <span class="pub-links">
+            <a href="https://link.springer.com/article/10.1007/s12161-025-02946-0" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Duplex EIS Sensor for Salmonella Typhi and Aflatoxin B1 Detection in Soil Runoff</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Krupa M. Thakkar, Sumana Karmakar, Vikram Narayanan Dhamu, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Biosensors, 15(10), 654 (2025)
+          <span class="pub-links">
+            <a href="https://www.mdpi.com/2079-6374/15/10/654" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Label-Free Electrochemical Biosensor for Real-Time Detection of Live Salmonella typhimurium in Salad Samples Using Non-Faradaic EIS</div>
+        <div class="pub-authors">Sumana Karmakar, Durgasha Poudyal, Kundan Kumar Mishra, Vikram Narayanan Dhamu, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Biosensors and Bioelectronics, 290, 117961 (2025)
+          <span class="pub-links">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40916251/" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Development and Benchtop Testing of an Aptamer-Based Sweat Sensor for CRP Detection</div>
+        <div class="pub-authors">Preeti Singh, Akash Kumar, Minal Ikram, Kundan Kumar Mishra, Kai-Chun Lin, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Microchimica Acta, 192(11), 767 (2025)
+          <span class="pub-links">
+            <a href="https://link.springer.com/article/10.1007/s00604-025-07631-x" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Temporal Profiling of Cytokines in Passively Expressed Sweat for Detection of Infection Using the AWARE Device</div>
+        <div class="pub-authors">Preeti Singh, Akash Kumar, Kundan Kumar Mishra, Kai-Chun Lin, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">ACS Sensors, 10(8), 5539–5549 (2025)
+          <span class="pub-links">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40749131/" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Electrochemical Sensor Platform for Rapid Detection of Foodborne Toxins</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Krupa M. Thakkar, Vikram Narayanan Dhamu, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Biosensors, 15(6), 361 (2025)
+          <span class="pub-links">
+            <a href="https://www.mdpi.com/2079-6374/15/6/361" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Advancing Food Safety: Two-Plex Electrochemical Biosensor for Mycotoxin Detection in Food Matrices</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Vikram Narayanan Dhamu, Abhinav Kokala, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Biosensors and Bioelectronics: X, 25, 100626 (2025)
+          <span class="pub-links">
+            <a href="https://www.sciencedirect.com/science/article/pii/S2590137025000536" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Quick and Sensitive Two-Plex Electrochemical Platform for Pathogen Detection in Water</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Vikram Narayanan Dhamu, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Nano Select, 6(11), e70017 (2025)
+          <span class="pub-links">
+            <a href="https://onlinelibrary.wiley.com/doi/10.1002/nano.70017" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Development of a Portable Electrochemical Sensing Platform for Impedance Spectroscopy-Based Biosensing Using an ARM-Based Microcontroller</div>
+        <div class="pub-authors">Joseph Charles Khavul Spiro, Kundan Kumar Mishra, Vikram Narayanan Dhamu, Avi Bhatia, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Sensors & Diagnostics, 3, 1835–1842 (2024)
+          <span class="pub-links">
+            <a href="https://pubs.rsc.org/en/content/articlelanding/2024/sd/d4sd00234b" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Electroanalytical Platform for Rapid E. coli O157:H7 Detection in Water Samples</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Vikram Narayanan Dhamu, Chesna Jophy, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Biosensors, 14(6), 298 (2024)
+          <span class="pub-links">
+            <a href="https://www.mdpi.com/2079-6374/14/6/298" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">PathoSense: A Rapid Electroanalytical Device Platform for Screening Salmonella in Water Samples</div>
+        <div class="pub-authors">Kundan Kumar Mishra, Vikram Narayanan Dhamu, Durgasha Poudyal, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">Microchimica Acta, 191(3), 146 (2024)
+          <span class="pub-links">
+            <a href="https://link.springer.com/article/10.1007/s00604-024-06232-4" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Article</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Two-Dimensional MoS<sub>2</sub>-Based Electrochemical Biosensor for Highly Selective Detection of Glutathione</div>
+        <div class="pub-authors">Brajesh Rawat, Kundan Kumar Mishra, Ujjwol Barman, Leena Arora, Durba Pal, and Roy Paily</div>
+        <div class="pub-venue">IEEE Sensors Journal, 20(13), 6937–6944 (2020)
+          <span class="pub-links">
+            <a href="https://www.iitg.ac.in/roypaily/publication.html" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Reference</a>
+          </span>
+        </div>
+      </div>
+
+      <h2 class="pub-category">Book Chapters</h2>
+
+      <div class="pub-item">
+        <div class="pub-title">Lateral Flow Based Immunosensors for Monitoring Food Quality and Safety</div>
+        <div class="pub-authors">Durgasha C. Poudyal, Vikram Narayanan Dhamu, Manish Samson, Kundan Mishra, Diya Baby, Sriram Muthukumar, and Shalini Prasad</div>
+        <div class="pub-venue">In <em>Sensor Technologies for Food Quality and Safety</em>, Royal Society of Chemistry, pp. 151–174 (2025)
+          <span class="pub-links">
+            <a href="https://books.rsc.org/books/edited-volume/2298/chapter/8487222/Lateral-Flow-Based-Immunosensors-for-Monitoring" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Chapter</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Introduction to Bio-Nanotechnology</div>
+        <div class="pub-authors">Raksha Anand, Kundan Kumar Mishra, and Navneeta Bharadvaja</div>
+        <div class="pub-venue">In <em>Biogenic Nanomaterials for Environmental Sustainability: Principles, Practices, and Opportunities</em>, Springer, pp. 1–11 (2024)
+          <span class="pub-links">
+            <a href="https://link.springer.com/book/10.1007/978-3-031-45956-6" class="pub-link-btn pub-link-doi" target="_blank"><i class="fas fa-external-link-alt"></i> Book</a>
+          </span>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">
+        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1rem;">
+          For the latest citations, metrics, and any newly indexed work:
+        </p>
+        <a href="https://scholar.google.com/citations?user=jDJQOswAAAAJ&hl=en" target="_blank" class="btn" style="text-decoration: none;">
+          <i class="fas fa-graduation-cap"></i> View Google Scholar Profile
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Kundan Mishra.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://lawa-chatbot-widget.netlify.app/chatbot-widget.js"
+    data-api-key="cb_X2hI9110PWPpMKoHxnpzUPxY5k7KM7z2C6E-RuNYipc" data-api-base="wss://chat.lawa.app"
+    data-api-url="https://chat.lawa.app" data-chatbot-name="AI Assistant" data-theme="light"
+    data-position="bottom-right" data-primary-color="#2563eb" data-text-color="#ffffff"
+    data-greeting="Hello! How can I help you today?" data-placeholder="Type your message..."
+    data-chatbot-tone="professional" data-response-length="balanced" data-language="en"
+    data-enable-typing-indicator="true" data-enable-sound-notifications="false" data-max-retries="3"
+    data-reconnect-delay="2000" async>
+  </script>
+</body>
+
+</html>

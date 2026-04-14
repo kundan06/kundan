@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kundan Mishra - PhD Candidate in Bioengineering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .hero-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      flex-wrap: wrap;
+      text-align: left;
+      padding-top: 1rem;
+    }
+
+    .hero-copy {
+      flex: 1.4;
+      min-width: 290px;
+    }
+
+    .hero-copy h1 {
+      margin-bottom: 0.5rem;
+      font-size: clamp(2.3rem, 5vw, 3.4rem);
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .hero-text-box {
+      color: #555;
+      background: rgba(255,255,255,0.88);
+      padding: 1rem 1.15rem;
+      border-radius: 14px;
+      display: inline-block;
+      max-width: 760px;
+      line-height: 1.8;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.05);
+    }
+
+    .hero-image-wrap {
+      flex: 0 0 270px;
+      text-align: center;
+    }
+
+    .hero-image-wrap img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      border: 6px solid #fff;
+    }
+
+    .quick-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .quick-stat-card {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(37,99,235,0.12);
+      border-radius: 16px;
+      padding: 1rem 1.1rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+    }
+
+    .quick-stat-card .label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .quick-stat-card .value {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-color);
+      line-height: 1.4;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2rem;
+      margin-top: 3rem;
+      align-items: start;
+    }
+
+    .section-card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 18px;
+      padding: 1.5rem;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+      border: 1px solid rgba(148,163,184,0.14);
+    }
+
+    .section-card h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .highlight-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .highlight-list li {
+      margin-bottom: 0.95rem;
+      padding-left: 1.4rem;
+      position: relative;
+      line-height: 1.75;
+      color: #444;
+    }
+
+    .highlight-list li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      color: var(--primary-color);
+      font-size: 0.9rem;
+    }
+
+    .mini-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .mini-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.1rem;
+      border: 1px solid rgba(148,163,184,0.18);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      height: 100%;
+    }
+
+    .mini-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.55rem;
+      font-size: 1.05rem;
+    }
+
+    .mini-card p {
+      margin: 0;
+      line-height: 1.7;
+      color: #555;
+      font-size: 0.96rem;
+    }
+
+    .mini-card .tag {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+
+    .news-item {
+      background: #fff;
+      border: 1px solid rgba(148,163,184,0.18);
+      border-radius: 16px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    }
+
+    .news-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .news-source {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .news-item h3 {
+      margin: 0 0 0.55rem 0;
+      font-size: 1.03rem;
+      line-height: 1.45;
+    }
+
+    .news-item p {
+      margin: 0;
+      color: #555;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .news-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.1rem;
+    }
+
+    .cta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1rem;
+      background: #fff;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.2);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    @media (max-width: 900px) {
+      .home-grid,
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-wrap {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .social-links {
+        justify-content: center !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="ai-background"></canvas>
+
+  <header class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">Kundan Mishra</a>
+      <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="Kundan-Mishra_CV.pdf" target="_blank">CV</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero animate-fade-in">
+      <div class="hero-wrap">
+        <div class="hero-copy">
+          <h1>Kundan Mishra</h1>
+          <div class="hero-subtitle">PhD Candidate | Bioengineering | Electrochemical Biosensors | EIS | Agentic AI</div>
+
+          <div class="hero-text-box">
+            I am a <strong>PhD Candidate in Bioengineering at The University of Texas at Dallas</strong> working on
+            <strong>electrochemical biosensors, electrochemical impedance spectroscopy (EIS), assay development,
+            microfluidic lab-on-a-chip systems, and translational sensing platforms</strong> for food, environmental,
+            and health applications. My work spans sensor design, screen printing, functionalization, assay optimization,
+            electrochemical testing, and validation in complex real-world matrices.
+          </div>
+
+          <div class="social-links" style="justify-content: flex-start; margin-top: 1.15rem;">
+            <a href="https://scholar.google.com/citations?user=jDJQOswAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://github.com/kundan06" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kundan-kumar-mishra/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:mishra.kundan06@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <div class="cta-row">
+            <a href="publications.html" class="cta-pill"><i class="fas fa-book-open"></i> Publications</a>
+            <a href="projects.html" class="cta-pill"><i class="fas fa-microscope"></i> Projects</a>
+            <a href="Kundan-Mishra_CV.pdf" target="_blank" class="cta-pill"><i class="fas fa-file-pdf"></i> Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="images/kundan.jpg" alt="Kundan Mishra">
+        </div>
+      </div>
+
+      <div class="quick-stat-grid">
+        <div class="quick-stat-card">
+          <div class="label">University</div>
+          <div class="value">The University of Texas at Dallas</div>
+        </div>
+        <div class="quick-stat-card">
+          <div class="label">Current Focus</div>
+          <div class="value">Multiplexed EIS biosensors for pathogens, toxins, pesticides, and antibiotics</div>
+        </div>
+        <div class="quick-stat-card">
+          <div class="label">Research Areas</div>
+          <div class="value">Biosensors, food safety, sensor fabrication, microbiology, point-of-care systems</div>
+        </div>
+        <div class="quick-stat-card">
+          <div class="label">Profile Links</div>
+          <div class="value">Google Scholar, GitHub, LinkedIn, and CV linked from this page</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-grid">
+      <section class="section-card animate-fade-in">
+        <h2 class="section-title">Highlights</h2>
+        <ul class="highlight-list">
+          <li><strong>PhD in Bioengineering</strong> at The University of Texas at Dallas with <strong>4.0/4.0 GPA</strong>.</li>
+          <li>Developed <strong>intelligent multiplexed electrochemical impedance spectroscopy (EIS) biosensors</strong> for food and environmental sensing.</li>
+          <li>Validated sensing platforms in complex matrices including <strong>chicken, shrimp, milk, salad, water, and soil runoff</strong>.</li>
+          <li>Published work in <strong>Biosensors</strong>, <strong>Biosensors and Bioelectronics</strong>, <strong>Food Analytical Methods</strong>, <strong>Microchimica Acta</strong>, and related venues.</li>
+          <li>Awards include the <strong>ECS Jonsson Family Bioengineering Graduate Fellowship (2024–2025)</strong>, <strong>Convergence Grant 2025</strong>, <strong>ECS Fall 2025 Travel Award</strong>, and <strong>BMES 2025 Travel Grant</strong>.</li>
+        </ul>
+      </section>
+
+      <section class="section-card animate-fade-in">
+        <h2 class="section-title">Selected Research</h2>
+        <div class="mini-card-grid">
+          <div class="mini-card">
+            <div class="tag">Food Safety</div>
+            <h3>Multiplexed EIS Biosensors</h3>
+            <p>Built and validated biosensor platforms for simultaneous detection of antibiotics, pesticides, pathogens, and toxins in real sample matrices.</p>
+          </div>
+          <div class="mini-card">
+            <div class="tag">Microfluidics</div>
+            <h3>Lab-on-a-Chip Nanobiosensors</h3>
+            <p>Contributed to microfluidic lab-on-a-chip nanobiosensor development and non-silicon nanofabrication research during the NNetRA program.</p>
+          </div>
+          <div class="mini-card">
+            <div class="tag">Diagnostics</div>
+            <h3>Breath Biomarker Sensing</h3>
+            <p>Worked on nanomaterial-enabled sensing systems for biomarker analysis, including molecular diabetic biomarkers in breath and MoS2-based electrochemical concepts.</p>
+          </div>
+          <div class="mini-card">
+            <div class="tag">Translation</div>
+            <h3>Portable Sensor Platforms</h3>
+            <p>Focused on sensor fabrication, assay optimization, portable electroanalytical systems, and real-world validation for translational deployment.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section-card animate-fade-in" style="margin-top: 3rem;">
+      <h2 class="section-title">News and Media</h2>
+      <div class="news-grid">
+        <div class="video-card">
+          <div class="news-source">Featured Video</div>
+          <iframe
+            src="https://www.youtube.com/embed/0fdFEkysATQ"
+            title="UT Dallas: Momentum Is Our Hallmark"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <a href="https://www.youtube.com/watch?v=0fdFEkysATQ" target="_blank" class="news-link">
+            Watch on YouTube <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div>
+          <div class="news-item">
+            <div class="news-source">Dallas Innovates</div>
+            <h3>From Fentanyl to DIY Food Safety: Dr. Prasad’s Groundbreaking Trifecta of Detection Devices</h3>
+            <p>A feature covering translational sensing work around practical detection technologies and biosensor-driven impact in health and food safety.</p>
+            <a href="https://dallasinnovates.com/from-fentanyl-to-food-safety-dr-prasads-groundbreaking-trifecta-of-detection-devices-9999/" target="_blank" class="news-link">
+              Read article <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="news-item">
+            <div class="news-source">The Dallas Morning News</div>
+            <h3>UT Dallas scientists create food sensor that detects unwanted bacteria, chemicals</h3>
+            <p>News coverage highlighting sensor innovation at UT Dallas and its relevance to rapid food safety screening and real-world detection needs.</p>
+            <a href="https://www.dallasnews.com/news/2025/07/14/ut-dallas-scientists-create-food-sensor-that-detects-unwanted-bacteria-chemicals/" target="_blank" class="news-link">
+              Read article <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="animate-fade-in" style="margin-top: 3rem;">
+      <h2 class="section-title">Explore More</h2>
+      <div class="mini-card-grid">
+        <div class="mini-card">
+          <div class="tag">About</div>
+          <h3>Research Background</h3>
+          <p>Learn more about my research interests, supervisor, collaborators, and academic background.</p>
+          <a href="about.html" class="news-link">Open About <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="mini-card">
+          <div class="tag">Publications</div>
+          <h3>Journal Articles & Book Chapters</h3>
+          <p>Browse selected peer-reviewed journal articles, electrochemical sensor papers, and book chapter contributions.</p>
+          <a href="publications.html" class="news-link">View Publications <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="mini-card">
+          <div class="tag">Projects</div>
+          <h3>Sensor Platforms & Diagnostics</h3>
+          <p>See project summaries spanning multiplexed biosensing, microfluidics, portable diagnostics, and nanomaterial-enabled sensing.</p>
+          <a href="projects.html" class="news-link">View Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="mini-card">
+          <div class="tag">Experience</div>
+          <h3>Training & Professional Work</h3>
+          <p>See my academic training, research roles, teaching experience, and technical background across sensing and bioengineering.</p>
+          <a href="experience.html" class="news-link">Open Experience <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Kundan Mishra</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://lawa-chatbot-widget.netlify.app/chatbot-widget.js"
+    data-api-key="cb_X2hI9110PWPpMKoHxnpzUPxY5k7KM7z2C6E-RuNYipc" data-api-base="wss://chat.lawa.app"
+    data-api-url="https://chat.lawa.app" data-chatbot-name="AI Assistant" data-theme="light"
+    data-position="bottom-right" data-primary-color="#2563eb" data-text-color="#ffffff"
+    data-greeting="Hello! How can I help you today?" data-placeholder="Type your message..."
+    data-chatbot-tone="professional" data-response-length="balanced" data-language="en"
+    data-enable-typing-indicator="true" data-enable-sound-notifications="false" data-max-retries="3"
+    data-reconnect-delay="2000" async>
+  </script>
+
+</body>
+
+</html>
